@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white shadow-md shadow-gray-100">
+    <div className="bg-white shadow-md shadow-gray-100 fixed top-0 w-full">
       <div className="container m-auto px-4">
         <div className="nav flex justify-between items-center py-4">
           <div className="logo flex-none">
@@ -25,12 +25,11 @@ const Navbar = () => {
             onClick={toggleMenu}
           >
             {toggle === true ? <MdClose /> : <MdMenu />}
-            {/* Menu */}
           </div>
           <div
-            className={`nav-menu fixed md:static w-[300px] md:w-auto p-4 md:p-0 top-[70px] right-[${
-              toggle === true ? "0px" : "-300px"
-            }] transition-all flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 bg-black md:bg-inherit text-white md:text-inherit h-screen md:h-auto`}
+            className={`nav-menu fixed md:static w-[300px] md:w-auto p-4 md:p-0 top-[70px] ${
+              toggle === true ? "active" : ""
+            } transition-all flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 bg-white h-screen md:h-auto`}
           >
             <Link href="#" className="nav-link hover:text-primary">
               Home

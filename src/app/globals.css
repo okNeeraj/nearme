@@ -10,4 +10,21 @@
 
 body {
   @apply text-secondary;
+  padding-top: 70px;
+}
+
+
+.nav-menu {
+  right: -300px;
+}
+
+@media (max-width: 767px) {
+  .nav-menu {
+    box-shadow: -4px 10px 11px rgb(0 0 0 / 7%);
+  }
+}
+
+
+.nav-menu.active {
+  right: 0;
 }
