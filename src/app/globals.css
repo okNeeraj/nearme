@@ -24,6 +24,10 @@ body {
   }
 }
 
+.visibility-auto {
+  content-visibility: auto;
+}
+
 
 .nav-menu.active {
   right: 0;

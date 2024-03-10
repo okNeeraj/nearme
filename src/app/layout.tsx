@@ -22,7 +22,28 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <Intro />
+        <Intro visibility={false} />
+        <Intro visibility={false} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        <Intro visibility={true} />
+        {/* <Intro visibility={true} /> */}
         <main>{children}</main>
         <Footer />
       </body>
